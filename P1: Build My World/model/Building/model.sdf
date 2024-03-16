@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='newworld'>
+    <pose>0 0 0 0 -0 0</pose>
+    <link name='Door_17'>
+      <collision name='Door_17_Collision'>
+        <geometry>
+          <box>
+            <size>0.9 0.17 2</size>
+          </box>
+        </geometry>
+        <pose>0 0 1 0 -0 0</pose>
+      </collision>
+      <visual name='Door_17_Visual'>
+        <pose>0 0 1 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.17 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-0.284586 6.53382 0 0 -0 0</pose>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>
