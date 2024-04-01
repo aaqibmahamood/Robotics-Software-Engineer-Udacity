@@ -2,7 +2,7 @@
 The aim of the project is to make robot follow while ball by using it's camera.
 
 <p align="center">
-  <img width="800" height="600" src="images/gochaseit.gif">
+  <img src="images/gochaseit.gif">
   <br>Robot chasing the white ball
 </p>
 
