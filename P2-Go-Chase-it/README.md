@@ -2,20 +2,12 @@
 The aim of the project is to make robot follow while ball by using it's camera.
 
 <p align="center">
-  <img width="460" height="300" src="images/gochaseit.gif">
+  <img width="800" height="600" src="images/gochaseit.gif">
   <br>Robot chasing the white ball
 </p>
 
-## Packages
-* `my_robot`: Which includes robot model, sensor plugins and gazebo world.
-* `ball_chaser`: Which includes image processer and robot driver nodes. 
-
-## Nodes
-* `process_image`: Which subscribes **/camera/rgb/image_raw** topic from camera and detects white blob on it. This node also calls **/ball_chaser/command_robot** service to steer robot.
-* `drive_bot`: Which drives robot respect to **/ball_chaser/command_robot** service requests.
-
 <p align="center">
-  <img width="800" height="200" src="images/rqt_graph.png">
+  <img width="800" height="600" src="images/rqt_graph.png">
   <br>Rosgraph of the project
 </p>
 
