@@ -7,7 +7,7 @@ The aim of the project is to make robot follow while ball by using it's camera.
 </p>
 
 <p align="center">
-  <img width="800" height="600" src="images/rqt_graph.png">
+  <img src="images/rqt_graph.png">
   <br>Rosgraph of the project
 </p>
 
