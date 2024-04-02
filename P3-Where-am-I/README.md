@@ -12,13 +12,13 @@
 
 ## 1. Using Teleop Package
 <p align="center">
-  <img src="images/Where_Am_I_teleop.png">
+  <img src="images/Where_Am_I_teleop.gif">
   <br>Using teleop_twist_keyboard package to navigate and map the world.
 </p>
 
 ## 2. Sending 2D Navigation Goal
 <p align="center">
-  <img src="images/Where-Am-I.png">
+  <img src="images/Where-Am-I.gif">
   <br>Using 2D Navigation goal to autonomously map and localize the environment
 </p>
 
