@@ -2,7 +2,7 @@
 
 <launch>
   <!-- Arguments for launch file with defaults provided -->
-  <arg name="database_path"     default="$(find my_robot)/launch/rtabmap.db"/>
+  <arg name="database_path"     default="rtabmap.db"/>
   <arg name="rgb_topic"   default="/camera/rgb/image_raw"/>
   <arg name="depth_topic" default="/camera/depth/image_raw"/>
   <arg name="camera_info_topic" default="/camera/rgb/camera_info"/>  
@@ -51,21 +51,21 @@
       <!-- Minimum visual inliers to accept loop closure -->
       <param name="Vis/MinInliers" type="string" value="15"/>
 
+      
       <param name="Mem/IncrementalMemory" type="string" value="false"/>
-
     </node>
-    
-    <!-- Visualization via rtabmap_viz; not recommended during simulation due to computing overhead
-    <node pkg="rtabmap_ros" type="rtabmapviz" name="rtabmapviz" args="-d $(find rtabmap_ros)/launch/config/rgbd_gui.ini" output="screen">
-        <param name="subscribe_depth"             type="bool" value="true"/>
-        <param name="subscribe_scan"              type="bool" value="true"/>
-        <param name="frame_id"                    type="string" value="robot_footprint"/>
 
-        <remap from="rgb/image"       to="$(arg rgb_topic)"/>
-        <remap from="depth/image"     to="$(arg depth_topic)"/>
-        <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
-        <remap from="scan"            to="/scan"/>
-        <remap from="odom" to="/odom"/>
-    </node> -->
+		<!-- visualization with rtabmapviz -->
+    <node pkg="rtabmap_ros" type="rtabmapviz" name="rtabmapviz" args="-d $(find rtabmap_ros)/launch/config/rgbd_gui.ini" output="screen">
+      <param name="subscribe_depth"             type="bool" value="true"/>
+      <param name="subscribe_scan"              type="bool" value="true"/>
+      <param name="frame_id"                    type="string" value="base_footprint"/>
+
+      <remap from="rgb/image"       to="$(arg rgb_topic)"/>
+      <remap from="depth/image"     to="$(arg depth_topic)"/>
+      <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
+      <remap from="scan"            to="/scan"/>
+			
+    </node>
   </group>
 </launch>
