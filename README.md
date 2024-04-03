@@ -4,3 +4,4 @@
  - [x] P2: [Go Chase it!](P2-Go-Chase-it)
  - [x] P3: [Where am I](P3-Where-am-I)
  - [x] P4: [Map My World](P4-Map-My-World)
+ - [x] P5: [Home Service Robot](P4-Home-Service-Robot)
